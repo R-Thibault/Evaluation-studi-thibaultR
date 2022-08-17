@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap');
+:root{
+  --ff-primary- : 'Play', sans-serif;
+  --ff-accent- : 'DynaPuff', cursive;
+  --ff-title-: 'Rubik Distressed', cursive;
+}
+
+body{
+  width: 100vw;
+  
+  background-image: url(Images/Background-image.jpg);
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: var(--ff-primary-);
+}
+
+header {
+  font-family: var(--ff-primary-);
+}
+
+.logo{
+  font-family: var(--ff-title-);
+}
+
+.card {
+  transition: all .2s ease;
+  border: none;
+  border-radius: 1.75em;
+  background-image: linear-gradient(to right top, rgba(169,175,199,0.3), rgba(179,191,212,0.3), rgba(191,207,223,0.3), rgba(205,223,235,0.3), rgba(221,238,246,0.3));
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+.card-img-top {
+  border-radius:  1.75em 1.75em 0 0;
+}
