@@ -27,15 +27,20 @@ header {
 }
 
 .card {
-  transition: all .2s ease;
+  
   border: none;
   border-radius: 1.75em;
   background-image: linear-gradient(to right top, rgba(169,175,199,0.3), rgba(179,191,212,0.3), rgba(191,207,223,0.3), rgba(205,223,235,0.3), rgba(221,238,246,0.3));
 }
-
-.card:hover {
-  transform: scale(1.1);
+@media screen and (min-width: 50em) {
+  .card{
+    transition: all .2s ease;
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
 }
+
 .card-img-top {
   border-radius:  1.75em 1.75em 0 0;
 }
